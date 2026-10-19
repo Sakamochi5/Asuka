@@ -52,3 +52,11 @@ footer .back-top{border-color:#c7d2de}
 .contact-links b{font-size:12px}
 footer p,footer .back-top{font-size:10px}
 @media(prefers-reduced-motion:reduce){.ticker div{animation:none}}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(247,249,252,.97);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(23,40,61,.08)}
+.article-group{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+.article-group>b,.article-list{min-width:0}
+.article-list{display:grid;gap:0}
+.article-group a{overflow-wrap:break-word;word-break:normal}
+.section,.section-top,.project-grid,.activity,.article-links,.contact{min-width:0}
+h1,h2,h3,p{overflow-wrap:break-word;word-break:normal}
+@media(max-width:760px){.article-group{grid-template-columns:minmax(0,1fr);gap:5px}.article-list{grid-column:1}.site-header{backdrop-filter:blur(8px)}}
